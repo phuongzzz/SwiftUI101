@@ -14,6 +14,7 @@
 		F3803B162444B4F5002BCB7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3803B152444B4F5002BCB7E /* Preview Assets.xcassets */; };
 		F3803B192444B4F5002BCB7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3803B172444B4F5002BCB7E /* LaunchScreen.storyboard */; };
 		F3EABBF72448A0900002B193 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EABBF62448A0900002B193 /* MenuView.swift */; };
+		F3EABBF92448B11C0002B193 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EABBF82448B11C0002B193 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F3803B182444B4F5002BCB7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3803B1A2444B4F5002BCB7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3EABBF62448A0900002B193 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F3EABBF82448B11C0002B193 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F3803B1A2444B4F5002BCB7E /* Info.plist */,
 				F3803B142444B4F5002BCB7E /* Preview Content */,
 				F3EABBF62448A0900002B193 /* MenuView.swift */,
+				F3EABBF82448B11C0002B193 /* Home.swift */,
 			);
 			path = SwiftUI101;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				F3803B0D2444B4F3002BCB7E /* AppDelegate.swift in Sources */,
 				F3EABBF72448A0900002B193 /* MenuView.swift in Sources */,
+				F3EABBF92448B11C0002B193 /* Home.swift in Sources */,
 				F3803B0F2444B4F3002BCB7E /* SceneDelegate.swift in Sources */,
 				F3803B112444B4F3002BCB7E /* ContentView.swift in Sources */,
 			);
