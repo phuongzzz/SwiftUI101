@@ -13,6 +13,7 @@ struct RingView: View {
     var color2: Color = Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
     var size: CGFloat = 300
     var percent: CGFloat = 90
+    @Binding var show: Bool
     
     var body: some View {
         let progress: CGFloat = 1 - (percent / 100)
@@ -26,7 +27,7 @@ struct RingView: View {
                 .frame(width: size, height: size)
             
             Circle()
-                .trim(from: progress, to: 1)
+                .trim(from: show ? progress: 1, to: 1)
                 .stroke(
                     LinearGradient(gradient: Gradient(colors: [color1, color2]), startPoint: .topTrailing, endPoint: .bottomLeading),
                     style: StrokeStyle(lineWidth: 10 * multiple, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20, 0], dashPhase: 0))
@@ -39,12 +40,15 @@ struct RingView: View {
                 .font(.system(size: 30 * multiple))
                 .fontWeight(.bold)
                 .shadow(color: Color.black.opacity(0.4), radius: 5, x: 0, y: 1)
+                .onTapGesture {
+                    self.show.toggle()
+            }
         }
     }
 }
 
 struct RingView_Previews: PreviewProvider {
     static var previews: some View {
-        RingView()
+        RingView(show: .constant(true))
     }
 }
