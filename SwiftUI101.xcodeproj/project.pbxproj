@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		955680EF245C541B0078F24C /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955680EE245C541B0078F24C /* CourseList.swift */; };
 		F31FA49A245A8FEA00026B73 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31FA499245A8FEA00026B73 /* Modifiers.swift */; };
 		F31FA4B3245A955600026B73 /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F31FA49C245A955600026B73 /* WorkSans-VariableFont_wght.ttf */; };
 		F31FA4B4245A955600026B73 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F31FA49E245A955600026B73 /* WorkSans-Regular.ttf */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		955680EE245C541B0078F24C /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		F31FA499245A8FEA00026B73 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		F31FA49C245A955600026B73 /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		F31FA49E245A955600026B73 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				F36C1592244B4DAD00D56185 /* UpdateList.swift */,
 				F36C1594244B577500D56185 /* UpdateDetail.swift */,
 				F37D77CE244EF29800B8F00F /* RingView.swift */,
+				955680EE245C541B0078F24C /* CourseList.swift */,
 			);
 			path = SwiftUI101;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				F3803B0F2444B4F3002BCB7E /* SceneDelegate.swift in Sources */,
 				F3803B112444B4F3002BCB7E /* ContentView.swift in Sources */,
 				F3854679244C1B0E003DD8D7 /* TabBar.swift in Sources */,
+				955680EF245C541B0078F24C /* CourseList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
