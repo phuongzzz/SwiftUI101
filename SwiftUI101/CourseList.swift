@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct CourseList: View {
-    @State var courses = coursesData
+    @ObservedObject var store = CourseStore()
     @State var active = false
     @State var activeIndex = -1
     @State var activeView: CGSize = .zero
@@ -20,9 +20,7 @@ struct CourseList: View {
             Color.black.opacity(Double(self.activeView.height/500))
                 .animation(.linear)
                 .edgesIgnoringSafeArea(.all)
-                .onAppear {
-                    getArray()
-                }
+            
             
             ScrollView {
                 VStack(spacing: 30) {
@@ -32,17 +30,23 @@ struct CourseList: View {
                         .padding(.leading, 30)
                         .padding(.top, 30)
                         .blur(radius: active ? 20 : 0)
-                    ForEach(courses.indices, id: \.self) { index in
+                    ForEach(store.courses.indices, id: \.self) { index in
                         GeometryReader { geometry in
-                            CourseView(show: self.$courses[index].show, active: self.$active, course: self.courses[index], index: index, activeIndex: self.$activeIndex, activeView: self.$activeView)
-                                .offset(y: self.courses[index].show ? -geometry.frame(in: .global).minY : 0)
+                            CourseView(
+                                show: self.$store.courses[index].show,
+                                active: self.$active,
+                                course: self.store.courses[index],
+                                index: index, activeIndex:
+                                self.$activeIndex, activeView:
+                                self.$activeView)
+                                .offset(y: self.store.courses[index].show ? -geometry.frame(in: .global).minY : 0)
                                 .opacity(self.activeIndex != index && self.active ? 0 : 1)
                                 .scaleEffect(self.activeIndex != index && self.active ? 0.5 : 1)
                                 .offset(x: self.activeIndex != index && self.active ? screen.width : 0)
                         }
                         .frame(height: 280)
-                        .frame(maxWidth: self.courses[index].show ? .infinity : screen.width - 60)
-                        .zIndex(self.courses[index].show ? 1 : 0)
+                        .frame(maxWidth: self.store.courses[index].show ? .infinity : screen.width - 60)
+                        .zIndex(self.store.courses[index].show ? 1 : 0)
                     }
                 }
                 .frame(width: screen.width)
