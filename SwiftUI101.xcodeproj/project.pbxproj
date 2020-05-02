@@ -43,6 +43,8 @@
 		F3803B162444B4F5002BCB7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3803B152444B4F5002BCB7E /* Preview Assets.xcassets */; };
 		F3803B192444B4F5002BCB7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3803B172444B4F5002BCB7E /* LaunchScreen.storyboard */; };
 		F3854679244C1B0E003DD8D7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3854678244C1B0E003DD8D7 /* TabBar.swift */; };
+		F3C001CA245D3A3400895ADF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C001C9245D3A3400895ADF /* Data.swift */; };
+		F3C001CC245D3B8200895ADF /* PostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C001CB245D3B8200895ADF /* PostsList.swift */; };
 		F3EABBF72448A0900002B193 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EABBF62448A0900002B193 /* MenuView.swift */; };
 		F3EABBF92448B11C0002B193 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EABBF82448B11C0002B193 /* Home.swift */; };
 /* End PBXBuildFile section */
@@ -86,6 +88,8 @@
 		F3803B182444B4F5002BCB7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3803B1A2444B4F5002BCB7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3854678244C1B0E003DD8D7 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		F3C001C9245D3A3400895ADF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F3C001CB245D3B8200895ADF /* PostsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsList.swift; sourceTree = "<group>"; };
 		F3EABBF62448A0900002B193 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		F3EABBF82448B11C0002B193 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +178,8 @@
 				F36C1594244B577500D56185 /* UpdateDetail.swift */,
 				F37D77CE244EF29800B8F00F /* RingView.swift */,
 				955680EE245C541B0078F24C /* CourseList.swift */,
+				F3C001C9245D3A3400895ADF /* Data.swift */,
+				F3C001CB245D3B8200895ADF /* PostsList.swift */,
 			);
 			path = SwiftUI101;
 			sourceTree = "<group>";
@@ -281,12 +287,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3803B0D2444B4F3002BCB7E /* AppDelegate.swift in Sources */,
+				F3C001CC245D3B8200895ADF /* PostsList.swift in Sources */,
 				F36C1597244B5F9F00D56185 /* UpdateStore.swift in Sources */,
 				F36C1593244B4DAD00D56185 /* UpdateList.swift in Sources */,
 				F3EABBF72448A0900002B193 /* MenuView.swift in Sources */,
 				F31FA49A245A8FEA00026B73 /* Modifiers.swift in Sources */,
 				F36C1595244B577500D56185 /* UpdateDetail.swift in Sources */,
 				F37D77CF244EF29800B8F00F /* RingView.swift in Sources */,
+				F3C001CA245D3A3400895ADF /* Data.swift in Sources */,
 				F3EABBF92448B11C0002B193 /* Home.swift in Sources */,
 				F324C88C2449F79F007E3CE2 /* HomeView.swift in Sources */,
 				F3803B0F2444B4F3002BCB7E /* SceneDelegate.swift in Sources */,
