@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CourseList: View {
     @ObservedObject var store = CourseStore()
@@ -112,7 +113,7 @@ struct CourseView: View {
                     }
                 }
                 Spacer()
-                Image(uiImage: course.image)
+                WebImage(url: course.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: .infinity)
@@ -180,14 +181,14 @@ struct Course: Identifiable {
     var id = UUID()
     var title: String
     var subTitle: String
-    var image: UIImage
+    var image: URL
     var logo: UIImage
     var color: Color
     var show: Bool
 }
 
 let coursesData: [Course] = [
-    Course(title: "SwiftUI", subTitle: "Learn basic of swiftUI", image: #imageLiteral(resourceName: "Card1"), logo: #imageLiteral(resourceName: "Logo1"), color: Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)), show: false),
-    Course(title: "SwiftUI Advanced", subTitle: "Learn advance of swiftUI", image: #imageLiteral(resourceName: "Card1"), logo: #imageLiteral(resourceName: "fingerprint-2"), color: Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)), show: false),
-    Course(title: "UI Design for Developer", subTitle: "Learn basic of design", image: #imageLiteral(resourceName: "Card4"), logo: #imageLiteral(resourceName: "Logo3"), color: Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)), show: false)
+    Course(title: "SwiftUI", subTitle: "Learn basic of swiftUI", image: URL(string: "https://dl.dropbox.com/s/8mh2u2243u7wo8u/Certificate%402x.png?dl=0")!, logo: #imageLiteral(resourceName: "Logo1"), color: Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)), show: false),
+    Course(title: "SwiftUI Advanced", subTitle: "Learn advance of swiftUI", image: URL(string: "https://dl.dropbox.com/s/uto8mdrpopvkxup/Card6%402x.png?dl=0")!, logo: #imageLiteral(resourceName: "fingerprint-2"), color: Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)), show: false),
+    Course(title: "UI Design for Developer", subTitle: "Learn basic of design", image: URL(string: "https://dl.dropbox.com/s/9mg9x3hcfkwoymv/Card5%402x.png?dl=0")!, logo: #imageLiteral(resourceName: "Logo3"), color: Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)), show: false)
 ]
