@@ -212,7 +212,7 @@ struct BottomCardView: View {
         .frame(maxWidth: .infinity)
         .padding(.top, 8)
         .padding(.horizontal, 16)
-        .background(Color.white)
+        .background(BlurView(style: .systemUltraThinMaterial))
         .cornerRadius(30)
         .shadow(radius: 20)
     }
