@@ -15,11 +15,11 @@ struct Home: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+            Color("background2")
                 .edgesIgnoringSafeArea(.all)
             HomeView(showProfile: $showProfile, showContent: $showContent)
                 .padding(.top, 44) // 44 is the height of status bar
-                .background(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                .background(Color("background2"))
                 .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
                 .clipShape(RoundedRectangle(cornerRadius: 30))
                 .scaleEffect(showProfile ? 0.9 : 1)
@@ -50,7 +50,8 @@ struct Home: View {
             )
             
             if showContent {
-                Color.white.edgesIgnoringSafeArea(.all)
+//                Color.whit.edgesIgnoringSafeArea(.all)
+                BlurView(style: .systemMaterial).edgesIgnoringSafeArea(.all)
                 ContentView()
                 VStack {
                     HStack {
@@ -76,7 +77,7 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Home().environment(\.colorScheme, .dark)
     }
 }
 
