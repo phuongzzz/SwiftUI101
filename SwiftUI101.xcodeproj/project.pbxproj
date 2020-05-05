@@ -45,6 +45,7 @@
 		F3854679244C1B0E003DD8D7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3854678244C1B0E003DD8D7 /* TabBar.swift */; };
 		F3C001CA245D3A3400895ADF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C001C9245D3A3400895ADF /* Data.swift */; };
 		F3C001CC245D3B8200895ADF /* PostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C001CB245D3B8200895ADF /* PostsList.swift */; };
+		F3E2FE482461BB29003DA483 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2FE472461BB29003DA483 /* Buttons.swift */; };
 		F3E5005D245D664800EB4897 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E5005C245D664800EB4897 /* DataStore.swift */; };
 		F3E50060245D6AAF00EB4897 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = F3E5005F245D6AAF00EB4897 /* Contentful */; };
 		F3E50062245D6DCB00EB4897 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E50061245D6DCB00EB4897 /* CourseStore.swift */; };
@@ -95,6 +96,7 @@
 		F3854678244C1B0E003DD8D7 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		F3C001C9245D3A3400895ADF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F3C001CB245D3B8200895ADF /* PostsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsList.swift; sourceTree = "<group>"; };
+		F3E2FE472461BB29003DA483 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		F3E5005C245D664800EB4897 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		F3E50061245D6DCB00EB4897 /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
 		F3E50066245D837600EB4897 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				F3803B0C2444B4F3002BCB7E /* AppDelegate.swift */,
+				F3E2FE472461BB29003DA483 /* Buttons.swift */,
 				F3803B0E2444B4F3002BCB7E /* SceneDelegate.swift */,
 				F3803B102444B4F3002BCB7E /* ContentView.swift */,
 				F31FA499245A8FEA00026B73 /* Modifiers.swift */,
@@ -323,6 +326,7 @@
 				F324C88C2449F79F007E3CE2 /* HomeView.swift in Sources */,
 				F3803B0F2444B4F3002BCB7E /* SceneDelegate.swift in Sources */,
 				F3803B112444B4F3002BCB7E /* ContentView.swift in Sources */,
+				F3E2FE482461BB29003DA483 /* Buttons.swift in Sources */,
 				F3854679244C1B0E003DD8D7 /* TabBar.swift in Sources */,
 				955680EF245C541B0078F24C /* CourseList.swift in Sources */,
 			);
