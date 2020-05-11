@@ -8,6 +8,14 @@
 
 import SwiftUI
 
+func haptic(type: UINotificationFeedbackGenerator.FeedbackType) {
+    UINotificationFeedbackGenerator().notificationOccurred(type)
+}
+
+func impact(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+    UIImpactFeedbackGenerator(style: style).impactOccurred()
+}
+
 struct Buttons: View {
     var body: some View {
         VStack(spacing: 50) {
@@ -186,6 +194,7 @@ struct ProgressButton: View {
                 gestureState = currentState
             }.onEnded { value in
                 self.press.toggle()
+                haptic(type: .success)
             }
         )
     }
